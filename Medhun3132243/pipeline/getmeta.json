@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "Get Metadata1",
+				"description": "Get files through last modified",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {

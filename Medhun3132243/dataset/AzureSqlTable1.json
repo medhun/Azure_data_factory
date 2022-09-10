@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "sales",
-			"table": "data"
+			"table": "dataq2"
 		}
 	}
 }

@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "child_items",
+				"description": "For each useful",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {

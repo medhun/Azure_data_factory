@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText3",
+	"name": "DelimitedText7",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Ls_blob",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "RAW",
+				"folderPath": "output",
 				"container": "data23244365"
 			},
 			"columnDelimiter": ",",

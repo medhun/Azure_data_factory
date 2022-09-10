@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "ForEach1",
+				"description": "To retrieve the data from Azure SQL table to blob in txt. format",
 				"type": "ForEach",
 				"dependsOn": [],
 				"userProperties": [],

@@ -30,7 +30,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "@item()",
+										"value": "@concat('select * from',item())",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
@@ -66,7 +66,13 @@
 							"outputs": [
 								{
 									"referenceName": "DelimitedText10",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"FileName": {
+											"value": "@concat(item(),'_',formatDateTime(utcnow(),'MM_dd_yyyy'),'.csv')",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
@@ -78,8 +84,7 @@
 			"Tables": {
 				"type": "Array",
 				"defaultValue": [
-					"Select * from sales.dataq2",
-					"select * from sales.data"
+					"[''Sales.data\", \"sales.dataq2\"]"
 				]
 			}
 		},

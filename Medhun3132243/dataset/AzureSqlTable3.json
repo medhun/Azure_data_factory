@@ -1,0 +1,16 @@
+{
+	"name": "AzureSqlTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_sql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "sales",
+			"table": "data"
+		}
+	}
+}

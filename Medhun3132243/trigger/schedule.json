@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "Blob1_to sqlazure",
+					"referenceName": "Blob1_to_sqlazure",
 					"type": "PipelineReference"
 				}
 			}

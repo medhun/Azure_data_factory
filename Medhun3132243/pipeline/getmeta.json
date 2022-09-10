@@ -25,6 +25,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"modifiedDatetimeStart": {
 							"value": "@addDays.(utcnow()-1)",
 							"type": "Expression"

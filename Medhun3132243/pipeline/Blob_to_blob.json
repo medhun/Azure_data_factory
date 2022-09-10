@@ -1,5 +1,5 @@
 {
-	"name": "Blob to blob",
+	"name": "Blob_to_blob",
 	"properties": {
 		"activities": [
 			{
@@ -90,6 +90,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {

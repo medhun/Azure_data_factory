@@ -1,5 +1,5 @@
 {
-	"name": "Variable",
+	"name": "Variable_paramater",
 	"properties": {
 		"activities": [
 			{
@@ -84,7 +84,8 @@
 			"Tables1": {
 				"type": "Array",
 				"defaultValue": [
-					"[ \"sales.dataq2\",''sales.data\"]"
+					" sales.dataq2",
+					"sales.data"
 				]
 			}
 		},

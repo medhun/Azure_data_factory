@@ -10,7 +10,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@variables('Tables')",
+						"value": "@variables('Tables1')",
 						"type": "Expression"
 					},
 					"activities": [
@@ -81,10 +81,10 @@
 			}
 		],
 		"variables": {
-			"Tables": {
+			"Tables1": {
 				"type": "Array",
 				"defaultValue": [
-					"[ \"Select * from sales.dataq2\",''Select * from sales.data\"]"
+					"[ \"sales.dataq2\",''sales.data\"]"
 				]
 			}
 		},

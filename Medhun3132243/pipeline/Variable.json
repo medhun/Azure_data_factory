@@ -84,7 +84,7 @@
 			"Tables": {
 				"type": "Array",
 				"defaultValue": [
-					"[''Sales.data\", \"sales.dataq2\"]"
+					"[''sales.data\", \"sales.dataq2\"]"
 				]
 			}
 		},

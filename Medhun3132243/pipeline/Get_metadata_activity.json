@@ -37,16 +37,16 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Get Metadata1",
+						"activity": "Remove_the_folders",
 						"dependencyConditions": [
-							"Completed"
+							"Succeeded"
 						]
 					}
 				],
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output.childItems",
+						"value": "@activity('Remove_the_folders').output.FilteredItemsCount",
 						"type": "Expression"
 					},
 					"activities": [
@@ -87,6 +87,29 @@
 							}
 						}
 					]
+				}
+			},
+			{
+				"name": "Remove_the_folders",
+				"type": "Filter",
+				"dependsOn": [
+					{
+						"activity": "Get Metadata1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Metadata1').output.childItems",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@Not(contains(item().type,'Folder' ))",
+						"type": "Expression"
+					}
 				}
 			}
 		],

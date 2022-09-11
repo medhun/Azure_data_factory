@@ -1,0 +1,43 @@
+{
+	"name": "Script",
+	"properties": {
+		"activities": [
+			{
+				"name": "Script1",
+				"type": "Script",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "Ls_sql",
+					"type": "LinkedServiceReference"
+				},
+				"typeProperties": {
+					"scripts": [
+						{
+							"type": "Query",
+							"text": "Select top(10) * from sales.dataq2\nprint 'FUNNY THING MEDHUN'"
+						}
+					],
+					"logSettings": {
+						"logDestination": "ExternalStore",
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "Ls_blob",
+								"type": "LinkedServiceReference"
+							},
+							"path": "data23244365/output"
+						}
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "DelimitedText20",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "MEDHUN",
+				"folderPath": "New",
+				"container": "data23244365"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
